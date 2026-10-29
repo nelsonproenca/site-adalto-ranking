@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "world": "vinyl-sleeve-liner-notes",
+  "seedKey": "2ad023e5",
+  "buildPath": "code",
+  "colors": {
+    "paper": "#faf7f2",
+    "ink": "#0b0b0d",
+    "ember": "#d9480f",
+    "gold": "#e8b04b"
+  },
+  "fonts": {
+    "display": "Anton",
+    "body": "PT Serif",
+    "mono": "JetBrains Mono"
+  },
+  "components": [
+    "sleeve-panel",
+    "track-row",
+    "btn-admin",
+    "btn-admin-ghost",
+    "input-field",
+    "label-text"
+  ]
+}

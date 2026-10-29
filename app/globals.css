@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: Anton, sans-serif;
+  --font-body: "PT Serif", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer components {
+  /* Painel "capa de disco": borda grossa, cantos levemente arredondados como a quina de uma capa */
+  .sleeve-panel {
+    @apply rounded-[6px] border-4 border-ink bg-paper;
+  }
+
+  /* Linha de "faixa" (track listing): índice — nome — valor, alinhado em colunas */
+  .track-row {
+    @apply grid grid-cols-[2.5rem_1fr_auto] items-center gap-3 border-b-2 border-ink/15 px-4 py-3 font-mono text-sm last:border-b-0 sm:text-base;
+  }
+
+  .track-row-index {
+    @apply text-ember;
+  }
+
+  /* Botão admin: estado instantâneo, sem transição suave (FORM raise: tactile-feedback) */
+  .btn-admin {
+    @apply rounded-[4px] border-2 border-ink bg-ink px-4 py-2 font-mono text-xs uppercase tracking-wider text-paper transition-none active:bg-ember active:border-ember;
+  }
+
+  .btn-admin-ghost {
+    @apply rounded-[4px] border-2 border-ink bg-transparent px-4 py-2 font-mono text-xs uppercase tracking-wider text-ink transition-none active:bg-ink active:text-paper;
+  }
+
+  .input-field {
+    @apply w-full rounded-[4px] border-2 border-ink bg-paper px-3 py-2 font-mono text-sm text-ink focus:border-ember focus:outline-none;
+  }
+
+  .label-text {
+    @apply font-mono text-xs uppercase tracking-wider text-ink/70;
+  }
+}

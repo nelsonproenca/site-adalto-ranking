@@ -1,0 +1,18 @@
+{
+  "buildPath": "code",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "app/(public)/page.tsx"
+        ],
+        "createdAt": "2026-10-28T23:53:03.858Z",
+        "reason": "agent judgment, documented in DESIGN.md: this is the gatefold spine (jacket fold) drawn in the system's own ink rule-weight, not a decorative accent tab on a plain card"
+      }
+    ]
+  }
+}
