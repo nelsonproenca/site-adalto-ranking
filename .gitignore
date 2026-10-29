@@ -35,3 +35,6 @@ yarn-error.log*
 
 # impeccable local session cache (machine-specific paths)
 .impeccable/hook.cache.json
+
+# supabase CLI local cache (machine/link-specific, not secret but not shareable)
+supabase/.temp/
