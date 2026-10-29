@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -9,9 +10,14 @@ export default function HomePage() {
           <div className="group relative grid h-40 w-40 place-items-center rounded-full border-4 border-gold bg-ink shadow-[0_0_0_6px_#0b0b0d] sm:h-56 sm:w-56">
             <div className="absolute inset-3 animate-[spin_18s_linear_infinite] rounded-full border border-gold/30" />
             <div className="absolute inset-6 animate-[spin_18s_linear_infinite] rounded-full border border-gold/20" />
-            <span className="grid h-12 w-12 place-items-center rounded-full bg-paper sm:h-16 sm:w-16">
-              <span className="h-3 w-3 rounded-full bg-ink" />
-            </span>
+            <Image
+              src="/images/adalto.png"
+              alt="Adalto Arcandes"
+              width={263}
+              height={265}
+              className="relative h-28 w-28 rounded-full border-2 border-paper object-cover sm:h-40 sm:w-40"
+              priority
+            />
           </div>
           <div>
             <h1 className="font-display text-4xl leading-none tracking-wide text-paper sm:text-5xl">
